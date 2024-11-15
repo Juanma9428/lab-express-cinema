@@ -34,3 +34,12 @@ exports.doCreate = (req, res, next) =>{
         })
         .catch(err => console.error(err))
 }
+
+exports.deleteMovie = (req, res, next) =>{
+    const { id } = req.params;
+    movie.findByIdAndDelete(id)
+     .then(() =>{
+        res.redirect('/')
+     })  
+     .catch(err => console.error(err))
+}

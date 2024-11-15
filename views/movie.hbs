@@ -11,6 +11,9 @@
             <p class="card-text">
               <p class="card-text">{{movie.description}}</p>
             <p class="card-text"><strong>Stars : </strong>{{movie.stars}}</p>
+            <form action="/movies/{{movie.id}}/delete" method="POST">
+            <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
             </p>
           </div>
         </div>

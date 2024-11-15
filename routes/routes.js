@@ -19,5 +19,6 @@ router.get('/movies', getMovies)
 router.get('/movie/create', create)
 router.get('/movie/:id', getMovie)
 router.post('/movie/create',doCreate)
+router.post('/movies/:id/delete', deleteMovie)
 
 module.exports = router;
